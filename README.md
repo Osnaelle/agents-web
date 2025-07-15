@@ -1,69 +1,87 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Let Me Ask
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplicação web para criação de salas de perguntas e respostas com suporte a gravação de áudio, utilizando inteligência artificial para respostas.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 **Tecnologias**
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19.1** — Biblioteca para interfaces de usuário  
+- **TypeScript 5.8** — Superset JavaScript com tipagem estática  
+- **Vite 7.0** — Build tool e servidor de desenvolvimento  
+- **TailwindCSS 4.1** — Framework CSS utility-first  
+- **React Router Dom 7.6** — Biblioteca de roteamento  
+- **TanStack React Query 5.8** — Gerenciamento de estado servidor e cache  
+- **Radix UI** — Componentes primitivos acessíveis  
+- **Shadcn/ui** — Sistema de componentes  
+- **Lucide React** — Biblioteca de ícones  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 **Padrões de Projeto**
+
+- **Component-based Architecture** — Arquitetura baseada em componentes React  
+- **File-based Routing** — Roteamento baseado em arquivos com React Router  
+- **Server State Management** — Gerenciamento de estado servidor com React Query  
+- **Variant-based Components** — Componentes com variantes usando CVA  
+- **Composition Pattern** — Padrão de composição com Radix Slot  
+- **Path Aliasing** — Alias de caminhos (`@/` aponta para `src/`)  
+
+---
+
+## ⚙️ **Configuração do Projeto**
+
+### **Pré-requisitos**
+- Node.js (versão 18 ou superior)  
+- npm ou yarn  
+
+### **Instalação**
+Clone o repositório:
+
+```bash
+git clone <url-do-repositório>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Execute o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+
+
+---
+
+## 📜 **Scripts Disponíveis**
+
+| Comando         | Descrição                            |
+|-----------------|--------------------------------------|
+| `npm run dev`   | Inicia o servidor de desenvolvimento  |
+| `npm run build` | Gera build de produção                |
+| `npm run preview` | Preview do build de produção        |
+
+---
+
+## 🖥️ **Backend**
+
+O projeto consome uma API que deve estar rodando na porta `3333`.  
+Certifique-se de que o backend esteja configurado e executando antes de iniciar o frontend.
+
+---
+
+## 🛠️ **Estrutura do Projeto**
+
+- `src/components`: Componentes reutilizáveis.
+- `src/pages`: Páginas principais da aplicação.
+- `src/models`: Tipos e interfaces TypeScript.
+- `src/schema`: Schemas de validação Zod.
+- `src/lib`: Utilitários e helpers.
+- `public`: Assets públicos.
