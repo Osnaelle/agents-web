@@ -62,7 +62,7 @@ const hook = useCreateRoomFormHook()
               }}
             />
 
-            <Button className="w-full" type="submit">
+            <Button className="w-full cursor-pointer" type="submit">
               Criar sala
             </Button>
           </form>

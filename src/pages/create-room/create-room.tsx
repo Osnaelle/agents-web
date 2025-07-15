@@ -15,7 +15,7 @@ return(
         <div className="mx-auto max-w-4xl">
               
          
-       <div className="grid grid-cols-2 items-start gap-8">
+       <div className="grid grid-cols-2 items-start gap-8 max-h-screen scroll-auto">
 <CreateRoomForm/>
       
        <Card>

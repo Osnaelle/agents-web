@@ -62,7 +62,7 @@ const hook = useQuestionFormHook(props.roomId)
               )}
             />
 
-            <Button disabled={hook.isSubmitting} type="submit">
+            <Button disabled={hook.isSubmitting} type="submit" className='cursor-pointer'>
               Enviar pergunta
             </Button>
           </form>
